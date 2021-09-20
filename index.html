@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introducción</title>
+</head>
+<body>
+  <h1 id="h1-title">Conectando el DOM</h1>
+  <div class="elements">
+    <button id="btnMouse">1. Eventos del Mouse</button>
+    <button id="btnEstilos">2. Estilos</button>
+    <button id="btnAparece">3. Aparecer y desaparecer</button>
+    <button id="btnString">4. Propiedades de Strings</button>
+    <button id="btnMath">5. Función Math</button>
+    <button id="btnBoolean">6. Variable Boolean</button>
+    <button id="btnObjetos">7. Objetos</button>
+    <button id="btnObjetos">8. Arreglos</button>
+    <button id="btn_clear">0. Clear</button>
+  </div>
+  <div class="text-box">
+    <input id="txt-entrada1" type="text" placeholder="Evento keyup">
+    <input id="txt-entrada2" type="text" placeholder="Evento keydown">
+    <input id="txt-entrada3" type="text" placeholder="Evento keypress">
+  </div>
+</body>
+<script src="app.js"></script>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    color: blue;
+    margin-bottom: 10rem;
+  }
+
+  button {
+    margin: 1rem;
+    font-size: 1rem; 
+    width: 6rem;
+    height: 6rem;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: green;
+    box-shadow: 0 0 20px orangered;
+  }
+
+  button:focus {
+    background-color: green;
+  }
+
+  .elements {
+    width: 35rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  input {
+    width: 20rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  .text-box {
+    width: 20rem;
+  }
+
+  #btn_clear {
+    width: 30rem;
+    font-size: 2rem;
+    background-color: rgb(2, 94, 86);
+    border-radius: 15px;
+  }
+
+  #btn_clear:hover {
+    background-color: #04acee;
+    color: #ffffff;
+  }
+</style>
+</html>
