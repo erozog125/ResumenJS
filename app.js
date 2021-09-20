@@ -7,6 +7,28 @@ const btn_event_mouse = document.querySelector('#btnMouse');
 const btnEstilos = document.querySelector('#btnEstilos');
 const btn_aparecer = document.querySelector('#btnAparece');
 const btn_strings = document.querySelector('#btnString');
+const btn_Math = document.querySelector('#btnMath');
+const btnBoolean = document.querySelector('#btnBoolean');
+
+const value_Boolean=()=> {
+  let mayorDeEdad = true;
+  // Es lo mismo que si escribo mayorDeEdad === true
+  if (mayorDeEdad) {
+    console.log('Bienvenido');
+  } else {
+    console.log('Aún no puedes ingresar');
+  }
+}
+
+const randomNum=(min, max)=> {
+	return Math.floor(Math.random() * (max - min)) + min; // You can remove the Math.floor if you don't want it to be an integer
+}
+
+const math_generate=()=> {
+  let cuadrado = parseInt(prompt('Ingresa un número menor a 1.000 y devolveré el cuadrado del mismo'));
+  h1_title.textContent = `${Math.pow(cuadrado,2)}`;
+  console.log(randomNum(cuadrado,1000));
+}
 
 const strings_properties=()=> {
   console.log(h1_title.textContent.length);
@@ -72,4 +94,6 @@ function eventListener() {
   btn_aparecer.addEventListener('click', appear);
   btn_aparecer.addEventListener('blur', vanish);  
   btn_strings.addEventListener('click', strings_properties);  
+  btn_Math.addEventListener('click', math_generate);  
+  btnBoolean.addEventListener('click', value_Boolean);  
 }
